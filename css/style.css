@@ -84,6 +84,12 @@
 
 .header {
 	padding: 18px 0;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	background: #ffffff;
+	z-index: 4;
 }
 
 .nav-li {
@@ -144,6 +150,7 @@
 
 
 .banner {
+	margin-top: 96px;
 	padding: 228px 0;
 	background-image: url('../img/photos/banner.png');
 	background-position: center center;
@@ -493,7 +500,6 @@
 }
 
 
-
 /* -----Subscribe----- */
 
 
@@ -630,13 +636,15 @@
 		max-width: 750px;
 	}
 
+
+
 	  /* стилизуем кнопку */
 
 
 	.menu__btn {
-		display: flex; /* используем flex для центрирования содержимого */
-		align-items: center;  /* центрируем содержимое кнопки */
-		position: absolute;
+		display: flex; 
+		align-items: center; 
+		position: fixed;
 		top: 20px;
 		right: 50px;
 		width: 26px;
@@ -665,6 +673,7 @@
 	}
 
 	  /* контейнер меню */
+
 	.nav-ul {
 		display: block;
 		position: fixed;
@@ -787,7 +796,6 @@
 
 	.banner {
 		padding: 100px 0;
-		background-size: contain;
 	}
 
 	.title {
